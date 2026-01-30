@@ -3,6 +3,8 @@ from app.auth import verify_api_key
 from app.detector import detect_scam
 from app.agent import agent_reply
 from app.memory import store_message
+from fastapi import Header, HTTPException
+import os
 
 app = FastAPI()
 
